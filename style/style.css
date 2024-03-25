@@ -37,6 +37,11 @@ p {
     margin: 1rem 0;
 }
 
+h1 {
+    width: 100%;
+
+}
+
 section {
     margin-bottom: 4rem;
 }
@@ -101,7 +106,10 @@ section {
     width: 100%;
 }
 
-.third-block {
+.third-block .card {
+    width: calc(100% - 2rem);
+    margin: 1rem;
+
     
 }
 
@@ -133,6 +141,14 @@ footer {
 /* RESPONSIVE SOLUCTION */
 
 @media screen and (min-width: 479px) {
+
+    /* main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+
     .first-block {
         flex-direction: row;
         flex-wrap: wrap;
@@ -140,16 +156,64 @@ footer {
 
     .first-block .card:first-child{
         width: calc(70% - 2rem);
+        flex-direction: row;
+        justify-content: space-around
+
     }
 
     .first-block .card:nth-child(2){
         width: calc(30% - 2rem);
     }
 
-    .card {
+    .first-block .card {
         width: calc(100% / 3 - 2rem);
     }
 
+    .fourth-block {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .fourth-block .card {
+        width: calc(100% / 2 - 4rem);
+        margin: 1rem;
+    }
+
+    .fifth-block {
+        flex-direction: row;
+    }
+
+    .left-fifth-block {
+        width: calc(100% / 2 - 3rem);
+        margin-right: 1rem;
+    }
+    .right-fifth-block {
+        width: calc(100% / 2 - 3rem);
+    }
    
-    
+    .container {
+        width: 800px;
+    }
+
+    .footer-section {
+        width: 700px;
+    }
   }
+
+ @media screen and (min-width: 769px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxed {
+        width: 900px;
+    }
+    
+    .second-block .flex {
+        flex-direction: row;
+    }
+ }

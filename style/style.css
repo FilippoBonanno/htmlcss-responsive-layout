@@ -130,3 +130,26 @@ footer {
     background-color: rgb(53, 56, 59);
 }
 
+/* RESPONSIVE SOLUCTION */
+
+@media screen and (min-width: 479px) {
+    .first-block {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .first-block .card:first-child{
+        width: calc(70% - 2rem);
+    }
+
+    .first-block .card:nth-child(2){
+        width: calc(30% - 2rem);
+    }
+
+    .card {
+        width: calc(100% / 3 - 2rem);
+    }
+
+   
+    
+  }

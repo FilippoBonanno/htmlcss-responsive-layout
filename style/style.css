@@ -27,11 +27,9 @@ header {
 }
 
 .left-header {
-    background-color: aqua;
 }
 
-.right-header {
-    background-color: aqua;  
+.right-header { 
     display: block;
 }
 
@@ -116,10 +114,20 @@ img {
     width: calc(100% - 2rem);
 }
 
+.second-block {
+    background-color: #9593e6;
+    width: 100%;
+    
+}
 
 .third-block .card {
     width: calc(100% - 2rem);
     margin: 1rem;
+}
+
+.fourth-block {
+    background-color: #9593e6;
+    width: 100%;
 }
 
 
@@ -136,7 +144,8 @@ img {
 }
 
 .sixth-block {
-    background-color: rgb(91, 241, 191);
+    background-color: #9593e6;
+    width: 100%;
 }
 
 footer {
@@ -188,7 +197,7 @@ footer {
         width: calc(70%);
         
     }
-    .fourth-block {
+    .fourth-block .boxed {
         flex-direction: row;
         flex-wrap: wrap;
     }

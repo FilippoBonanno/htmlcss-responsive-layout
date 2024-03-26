@@ -146,10 +146,16 @@ img {
 .sixth-block {
     background-color: #9593e6;
     width: 100%;
+    margin-bottom: 0;
 }
 
 footer {
     background-color: rgb(53, 56, 59);
+}
+
+.footer-section {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 /* RESPONSIVE SOLUCTION */

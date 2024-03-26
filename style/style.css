@@ -14,8 +14,11 @@
 }
 /* header */
 
-.header-container {
+header {
     background-color: rgb(0, 60, 189);
+}
+
+.header-container {
     justify-content: space-between;
     flex-direction: row;
     color: white;
@@ -24,12 +27,10 @@
 
 .left-header {
     background-color: aqua;
-
 }
 
 .right-header {
-    background-color: aqua;
-    
+    background-color: aqua;  
 }
 
 /* main */
@@ -39,7 +40,6 @@ p {
 
 h1 {
     width: 100%;
-
 }
 
 section {
@@ -47,15 +47,9 @@ section {
 }
 
 .first-block {
-    background-color: yellowgreen;
-    
-
-}
-
-.boxed {
-    
     
 }
+
 
 .card {
     padding: 1rem;
@@ -66,7 +60,7 @@ section {
 }
 
 .second-block {
-    background-color: violet;
+   
  
 }
 
@@ -109,27 +103,21 @@ section {
 .third-block .card {
     width: calc(100% - 2rem);
     margin: 1rem;
-
-    
 }
 
-.fifth-block {
-    background-color: rgb(175, 236, 236);
-}
 
 .left-fifth-block {
     margin-bottom: 1rem;
     background-color: yellow;
     width: calc(100% - 2rem);
-    
-    
+ 
 }
 
 .right-fifth-block {
     background-color: orangered;
-    width: calc(100% - 2rem);
-      
+    width: calc(100% - 2rem);   
 }
+
 .sixth-block {
     background-color: rgb(91, 241, 191);
 }
@@ -142,27 +130,16 @@ footer {
 
 @media screen and (min-width: 479px) {
 
-    /* main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } */
-
     .first-block {
         flex-direction: row;
         flex-wrap: wrap;
     }
 
     .first-block .card:first-child{
-        width: calc(70% - 2rem);
+        width: calc(100% / 3 * 2 - 2rem);
         flex-direction: row;
         justify-content: space-around
 
-    }
-
-    .first-block .card:nth-child(2){
-        width: calc(30% - 2rem);
     }
 
     .first-block .card {
@@ -175,8 +152,7 @@ footer {
     }
 
     .fourth-block .card {
-        width: calc(100% / 2 - 4rem);
-        margin: 1rem;
+        width: calc(100% / 2 - 2rem);
     }
 
     .fifth-block {
@@ -184,23 +160,29 @@ footer {
     }
 
     .left-fifth-block {
-        width: calc(100% / 2 - 3rem);
-        margin-right: 1rem;
+        width: calc(60% - 2rem);
+        margin: 1rem;
     }
     .right-fifth-block {
-        width: calc(100% / 2 - 3rem);
+        width: calc(40% - 2rem);
+        margin: 1rem;
     }
    
     .container {
-        width: 800px;
+        width: 450px;
     }
 
     .footer-section {
-        width: 700px;
+        width: 450px;
     }
+
   }
 
  @media screen and (min-width: 769px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
 
     main {
         display: flex;
@@ -210,10 +192,20 @@ footer {
     }
 
     .boxed {
-        width: 900px;
+        width: 765px;
+        
     }
-    
+
     .second-block .flex {
         flex-direction: row;
     }
+
+    .container {
+        width: 650px;
+    }
+
+    .footer-section {
+        width: 550px;
+    }
+
  }

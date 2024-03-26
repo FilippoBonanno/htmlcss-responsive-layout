@@ -71,6 +71,9 @@ section {
     margin-bottom: 4rem;
 }
 
+img {
+    width: 100%;
+}
 .first-block {
     align-items: stretch;
     
@@ -100,41 +103,19 @@ section {
     margin-bottom: 2rem;
 }
 
+.second-block img {
+    width: 100%;
+}
+
 .left-second-block {
     margin-bottom: 1rem;
-    background-color: yellow;
     width: calc(100% - 2rem);
-    
-    
 }
 
 .right-second-block {
-    background-color: orangered;
     width: calc(100% - 2rem);
-      
 }
 
-.img-left-second-block {
-    background-color: brown;
-    margin: 1rem;
-    width: 100%;
-    
-}
-.text-left-second-block {
-    background-color: rgb(165, 97, 42);
-    margin: 1rem;
-    width: 100%;
-}
-.img-right-second-block {
-    background-color: rgb(165, 126, 42);
-    margin: 1rem;
-    width: 100%;
-}
-.text-right-second-block {
-    background-color: rgb(118, 165, 42);
-    margin: 1rem;
-    width: 100%;
-}
 
 .third-block .card {
     width: calc(100% - 2rem);
@@ -184,6 +165,29 @@ footer {
         width: calc(100% / 3 - 2rem);
     }
 
+    .right-second-block { 
+        background-color: aqua;
+    }
+
+    .img-right-second-block {
+        background-color: white;
+        padding: 1rem;
+        border-radius: 20px;
+    }
+
+    .third-block .card {
+        flex-direction: row;
+        
+    }
+
+    .third-block .logo-card {
+        width: calc(30%);
+        
+    }
+    .third-block .text-card {
+        width: calc(70%);
+        
+    }
     .fourth-block {
         flex-direction: row;
         flex-wrap: wrap;
@@ -227,13 +231,11 @@ footer {
     }
 
     .right-header {
-        display: none;
-        
+        display: none; 
     }
 
     .first-block .card:first-child{
         flex-direction: row;
-
     } 
 
     .right-first-card{
@@ -257,8 +259,17 @@ footer {
         
     }
 
-    .second-block .flex {
+    .second-block .boxed{
         flex-direction: row;
+    }
+
+    .left-second-block {
+        margin-bottom: 0;
+        padding: 1rem;
+    }
+
+    .right-second-block { 
+        width: 50%;
     }
 
     .container {

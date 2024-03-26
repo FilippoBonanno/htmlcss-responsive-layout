@@ -23,6 +23,7 @@ header {
     flex-direction: row;
     color: white;
     padding: 1rem;
+    position: relative;
 }
 
 .left-header {
@@ -31,7 +32,31 @@ header {
 
 .right-header {
     background-color: aqua;  
+    display: block;
 }
+
+/* HIDDEN LEFT HEADER */
+
+.top-right-header {
+      position: absolute;
+      right: 1rem;
+}
+
+.top-right-header ul{
+    flex-direction: row; 
+    list-style: none; 
+    display: none;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+/* HIDDEN LEFT HEADER */
+
+
+
+
 
 /* main */
 p {
@@ -47,6 +72,7 @@ section {
 }
 
 .first-block {
+    align-items: stretch;
     
 }
 
@@ -58,10 +84,20 @@ section {
     width: calc(100% - 2rem);
     
 }
-
-.second-block {
-   
  
+#button i {
+    font-size: 1em;
+    background-color: rgb(0, 102, 255);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    
+
+}
+
+.card i {
+    font-size: 5em;
+    margin-bottom: 2rem;
 }
 
 .left-second-block {
@@ -137,9 +173,11 @@ footer {
 
     .first-block .card:first-child{
         width: calc(100% / 3 * 2 - 2rem);
-        flex-direction: row;
-        justify-content: space-around
+        flex-direction: column;
+    } 
 
+    .right-first-card{
+        width: 70%;
     }
 
     .first-block .card {
@@ -182,6 +220,29 @@ footer {
     header {
         display: flex;
         justify-content: center;
+    }
+
+    .top-right-header ul{
+        display: flex;
+    }
+
+    .right-header {
+        display: none;
+        
+    }
+
+    .first-block .card:first-child{
+        flex-direction: row;
+
+    } 
+
+    .right-first-card{
+        width: 200%;
+        align-self: flex-end;
+    }
+
+    .left-first-card{
+        align-self: flex-start;
     }
 
     main {

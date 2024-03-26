@@ -199,6 +199,7 @@ footer {
 
     .fifth-block {
         flex-direction: row;
+        align-items: stretch;
     }
 
     .left-fifth-block {
